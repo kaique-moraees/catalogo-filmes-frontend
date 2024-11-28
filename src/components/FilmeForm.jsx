@@ -17,7 +17,7 @@ const FilmeForm = ({ setFilmes }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/api/filmes', formData)
+    axios.post('http://52.5.108.112:8080/api/filmes', formData)
       .then(response => {
         setFilmes(prevFilmes => [...prevFilmes, response.data]);
         setFormData({
