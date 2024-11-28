@@ -3,7 +3,7 @@ import React from 'react';
 const CardFilme = ({ filme }) => {
   return (
     <div style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '8px' }}>
-      <img src={`http://localhost:8080/images/${filme.imagem}`} alt={filme.titulo} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+      <img src={`http://52.5.108.112:8080/images/${filme.imagem}`} alt={filme.titulo} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
       <h3>{filme.titulo}</h3>
       <p><strong>Gênero:</strong> {filme.genero}</p>
       <p><strong>Duração:</strong> {filme.duracao} min</p>
