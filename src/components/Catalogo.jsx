@@ -6,7 +6,7 @@ const Catalogo = () => {
   const [filmes, setFilmes] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/filmes')
+    axios.get('http://52.5.108.112:8080/api/filmes')
       .then(response => setFilmes(response.data))
       .catch(error => console.error('Erro ao carregar filmes', error));
   }, []);
